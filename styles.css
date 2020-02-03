@@ -3,12 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid red;
   font-family: 'Nunito', sans-serif;
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("./images/background3.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("./images/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #ffd059;
 }
 
 header {
@@ -45,7 +46,7 @@ header #links {
 header #links a {
   position: relative;
   min-width: 200px;
-  background-color: #333;
+  background-color: rgba(41, 41, 41, 0.5);
 }
 
 header a {
@@ -56,12 +57,22 @@ header a {
 }
 
 header .icon {
-  color: black;
+  color: white;
   display: block;
   position: fixed;
   right: 0;
   top: 0;
   height: 40px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .icon i {
@@ -75,6 +86,7 @@ header .icon i {
 
 .jumbotron h1, .jumbotron h3 {
   padding: 24px;
+  color: white;
 }
 
 .jumbotron nav {
@@ -85,6 +97,10 @@ header .icon i {
   margin: 8px;
   border-radius: 10px;
   border: 2px solid black;
+}
+
+.jumbotron nav a:hover {
+  color: #ffd059;
 }
 
 .jumbotron nav .btn-primary {
@@ -101,5 +117,64 @@ header .icon i {
 
 #about {
   background-color: white;
+}
+
+#about div > .completion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progress-bar {
+  background-color: #999999;
+  height: 25px;
+  padding: 5px;
+  width: 350px;
+  margin: 50px auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+          box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+  display: inline-block;
+  height: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 208, 89, 0.5) inset;
+          box-shadow: 0 1px 0 rgba(255, 208, 89, 0.5) inset;
+  -webkit-transition: width .4s ease-in-out;
+  transition: width .4s ease-in-out;
+}
+
+.blue span {
+  background-color: #ffd059;
+}
+
+.stripes span {
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-animation: animate-stripes 3s linear infinite;
+          animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
