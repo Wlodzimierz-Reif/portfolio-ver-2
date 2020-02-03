@@ -1,8 +1,11 @@
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
+    const x = document.getElementById("links");
+    const y = document.querySelector(".icon");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.color = "white";
     } else {
-      x.style.display = "flex";
+      x.style.display = "none";
+      y.style.color = "black";
     }
   }

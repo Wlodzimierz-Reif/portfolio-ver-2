@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("./images/background3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  overflow: hidden;
+  background-color: transparent;
+  height: 40px;
+}
+
+header #logo {
+  width: 20vw;
+  text-align: center;
+  position: fixed;
+}
+
+header #links {
+  display: none;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
+
+header #links a {
+  position: relative;
+  min-width: 200px;
+  background-color: #333;
+}
+
+header a {
+  padding: 8px;
+  font-size: 17px;
+  display: block;
+  color: white;
+}
+
+header .icon {
+  color: black;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 40px;
+}
+
+header .icon i {
+  font-size: 30px;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 80px;
+}
+
+.jumbotron h1, .jumbotron h3 {
+  padding: 24px;
+}
+
+.jumbotron nav {
+  margin-top: 32px;
+}
+
+.jumbotron nav a {
+  margin: 8px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.jumbotron nav .btn-primary {
+  background-color: rgba(41, 41, 41, 0.5);
+  color: #ececec;
+  padding: 8px;
+}
+
+.jumbotron nav .btn-secondary {
+  background-color: rgba(41, 41, 41, 0.5);
+  color: #ececec;
+  padding: 8px;
+}
+
+#about {
+  background-color: white;
+}
+/*# sourceMappingURL=styles.css.map */
