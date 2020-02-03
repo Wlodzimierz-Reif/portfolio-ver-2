@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    // border: 1px solid red;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -40,11 +40,13 @@ header {
         top: 0;
         right: 0;
         position: fixed;
+        // border: 1px solid red;
+        border-radius: 20px;
+        background-color: $secondary-transparent;
 
         a {
             position: relative;
             min-width: 200px;
-            background-color: $secondary-transparent;
         }
     }
 
@@ -64,13 +66,15 @@ header {
     right: 0;
     top: 0;
     height: 40px;
+    width: 40px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 
         i {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 }

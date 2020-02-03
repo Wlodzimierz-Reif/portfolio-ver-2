@@ -3,12 +3,14 @@ function myFunction() {
   const y = document.querySelector(".icon");
   if (x.style.display === "block") {
     x.style.display = "none";
-    y.style.color = "white";
+    // y.style.color = "white";
   } else {
     x.style.display = "block";
-    y.style.color = "black";
+    // y.style.color = "black";
   }
 }
+
+
 
 
 
