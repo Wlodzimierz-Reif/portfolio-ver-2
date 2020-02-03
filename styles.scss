@@ -1,0 +1,173 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(255, 208, 89);
+    }
+}
+
+header {
+    overflow: hidden;
+    background-color: transparent;
+    height: 40px;
+
+    #logo {
+        width: 20vw;
+        text-align: center;
+        position: fixed;
+    }
+
+    #links {
+        display: none;
+        top: 0;
+        right: 0;
+        position: fixed;
+
+        a {
+            position: relative;
+            min-width: 200px;
+            background-color: $secondary-transparent;
+        }
+    }
+
+    a {
+    padding: $spacing;
+    font-size: 17px;
+    display: block;
+    color: white;
+
+    }
+
+
+    .icon {
+    color: white;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+.jumbotron {
+    text-align: center;
+    padding: $spacing * 10;
+
+    h1, h3 {
+        padding: $spacing * 3;
+        color: white;
+    }
+
+    nav {
+    margin-top: $spacing * 4;
+
+        a {
+            margin: $spacing;
+            border-radius: 10px;
+            border: 2px solid black;
+
+            &:hover {
+                color: rgb(255, 208, 89);
+            }
+
+        }
+
+        .btn-primary {
+            background-color: $secondary-transparent;
+            color: $primary-color;
+            padding: $spacing;     
+
+        }
+
+        .btn-secondary {
+            background-color: $secondary-transparent;
+            color: $primary-color;
+            padding: $spacing;    
+        }
+    }
+}
+
+
+// ABOUT
+
+#about {
+    background-color: white;
+    
+    div > .completion {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+// PROGRESS BAR
+
+  .progress-bar {
+    background-color: rgb(153, 153, 153);
+    height: 25px;
+    padding: 5px;
+    width: 350px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+  .progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 208, 89, .5) inset;
+    transition: width .4s ease-in-out;
+  }
+  .blue span {
+    background-color: rgb(255, 208, 89);
+  }
+  .stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%,
+                      transparent 25%,
+                      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                      transparent 75%, transparent);
+    animation: animate-stripes 3s linear infinite;
+  }
+
+  @keyframes animate-stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 60px 0;
+    }
+  }
+
+
+
+//  Add a grey background color on mouse-over
+
+  
