@@ -30,9 +30,11 @@ header {
 }
 
 header #logo {
-  width: 20vw;
   text-align: center;
   position: fixed;
+  font-weight: 600;
+  background-color: rgba(41, 41, 41, 0.6);
+  border-radius: 20px;
 }
 
 header #links {
@@ -46,7 +48,7 @@ header #links {
 
 header #links a {
   position: relative;
-  min-width: 200px;
+  min-width: 125px;
 }
 
 header a {
@@ -64,7 +66,7 @@ header .icon {
   top: 0;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background-color: rgba(41, 41, 41, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +85,7 @@ header .icon i {
 
 .jumbotron {
   text-align: center;
-  padding: 80px;
+  padding: 40px;
 }
 
 .jumbotron h1, .jumbotron h3 {
@@ -96,7 +98,6 @@ header .icon i {
 }
 
 .jumbotron nav a {
-  margin: 8px;
   border-radius: 10px;
   border: 2px solid black;
 }
@@ -119,6 +120,8 @@ header .icon i {
 
 #about {
   background-color: white;
+  padding: 8px;
+  margin: 8px;
 }
 
 #about div > .completion {
@@ -128,6 +131,21 @@ header .icon i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 0.8em;
+}
+
+#about #image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px;
+}
+
+#about p {
+  padding-top: 8px;
 }
 
 .progress-bar {
@@ -135,7 +153,7 @@ header .icon i {
   height: 25px;
   padding: 5px;
   width: 60vw;
-  margin: 50px auto;
+  margin: 40px auto;
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
           box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
@@ -178,5 +196,23 @@ header .icon i {
   100% {
     background-position: 60px 0;
   }
+}
+
+#portfolio {
+  background-color: #292929;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 8px;
+}
+
+#portfolio .project {
+  width: 100vw;
+  height: 30vh;
+}
+
+#contact {
+  margin: 8px;
 }
 /*# sourceMappingURL=styles.css.map */

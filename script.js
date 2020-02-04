@@ -1,9 +1,9 @@
 function myFunction() {
   const x = document.getElementById("links");
-  const y = document.querySelector(".icon");
+  // const y = document.querySelector("body");
   if (x.style.display === "block") {
     x.style.display = "none";
-    // y.style.color = "white";
+    // y.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/background.jpg');";
   } else {
     x.style.display = "block";
     // y.style.color = "black";

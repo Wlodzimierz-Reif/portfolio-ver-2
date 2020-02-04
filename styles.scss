@@ -30,9 +30,12 @@ header {
     height: 40px;
 
     #logo {
-        width: 20vw;
+        // width: 20vw;
         text-align: center;
         position: fixed;
+        font-weight: 600;
+        background-color: $secondary-transparent;
+        border-radius: 20px;
     }
 
     #links {
@@ -40,13 +43,12 @@ header {
         top: 0;
         right: 0;
         position: fixed;
-        // border: 1px solid red;
         border-radius: 20px;
         background-color: $secondary-transparent;
 
         a {
             position: relative;
-            min-width: 200px;
+            min-width: 125px;
         }
     }
 
@@ -67,7 +69,7 @@ header {
     top: 0;
     height: 40px;
     width: 40px;
-    background-color: black;
+    background-color: $secondary-transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +83,7 @@ header {
 
 .jumbotron {
     text-align: center;
-    padding: $spacing * 10;
+    padding: $spacing * 5;
 
     h1, h3 {
         padding: $spacing * 3;
@@ -92,7 +94,7 @@ header {
     margin-top: $spacing * 4;
 
         a {
-            margin: $spacing;
+            // margin: $spacing;
             border-radius: 10px;
             border: 2px solid black;
 
@@ -122,10 +124,21 @@ header {
 
 #about {
     background-color: white;
+    padding: $spacing;
+    margin: $spacing; 
     
     div > .completion {
         display: flex;
         justify-content: space-between;
+        font-size: 0.8em;
+    }
+    #image {
+        display: flex;
+        justify-content: center;
+        margin: $spacing * 2;
+    }
+    p {
+        padding-top: $spacing;
     }
 }
 
@@ -137,7 +150,7 @@ header {
     height: 25px;
     padding: 5px;
     width: 60vw;
-    margin: 50px auto;
+    margin: $spacing * 5 auto;
     border-radius: 5px;
     box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
 }
@@ -170,8 +183,18 @@ header {
     }
   }
 
+#portfolio {
+    background-color: $secondary-color;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: $spacing; 
+    .project {
+        width: 100vw;
+        height: 30vh;
+    }
+}
 
-
-//  Add a grey background color on mouse-over
-
+#contact {
+    margin: $spacing;
+}
   
